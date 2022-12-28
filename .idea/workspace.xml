@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/OpenChat/OpenChat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/RollCake/RollCake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/SameQueue/SameQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/PreviousSong/PreviousSong.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Solving/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +37,23 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.SameQueue">
+  <component name="RunManager" selected="Application.PreviousSong">
     <configuration name="OpenChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programmers.OpenChat.OpenChat" />
       <module name="Java-Algorithm-Solving" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreviousSong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.PreviousSong.PreviousSong" />
+      <module name="Java-Algorithm-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.PreviousSong.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PreviousSong" />
         <item itemvalue="Application.SameQueue" />
         <item itemvalue="Application.RollCake" />
         <item itemvalue="Application.OpenChat" />
