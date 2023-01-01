@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/SoloPlaying/SoloPlaying.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/ChooseTangerine/ChooseTangerine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/StockPrice/StockPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/TargetNumber/TargetNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +39,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.SoloPlaying">
-    <configuration name="OpenChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.OpenChat.OpenChat" />
+  <component name="RunManager" selected="Application.TargetNumber">
+    <configuration name="ChooseTangerine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.ChooseTangerine.ChooseTangerine" />
       <module name="Java-Algorithm-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.ChooseTangerine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -51,32 +59,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Programmers.PreviousSong.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RollCake" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.RollCake.RollCake" />
-      <module name="Java-Algorithm-Solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Programmers.RollCake.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SameQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.SameQueue.SameQueue" />
-      <module name="Java-Algorithm-Solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Programmers.SameQueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,13 +79,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StockPrice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.StockPrice.StockPrice" />
+      <module name="Java-Algorithm-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.StockPrice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TargetNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.TargetNumber.TargetNumber" />
+      <module name="Java-Algorithm-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.TargetNumber.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TargetNumber" />
+        <item itemvalue="Application.ChooseTangerine" />
+        <item itemvalue="Application.StockPrice" />
         <item itemvalue="Application.SoloPlaying" />
         <item itemvalue="Application.PreviousSong" />
-        <item itemvalue="Application.SameQueue" />
-        <item itemvalue="Application.RollCake" />
-        <item itemvalue="Application.OpenChat" />
       </list>
     </recent_temporary>
   </component>
@@ -117,5 +125,26 @@
       <updated>1671900931409</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Programmers/StockPrice/StockPrice.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Programmers/TargetNumber/TargetNumber.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="Collections.max(map.values())" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
