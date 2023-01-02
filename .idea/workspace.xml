@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/SocialDistance/SocialDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/LineUp/LineUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +37,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.SocialDistance">
+  <component name="RunManager" selected="Application.LineUp">
     <configuration name="ChooseTangerine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programmers.ChooseTangerine.ChooseTangerine" />
       <module name="Java-Algorithm-Solving" />
@@ -51,12 +51,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SocialDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.SocialDistance.SocialDistance" />
+    <configuration name="LineUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.LineUp.LineUp" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.SocialDistance.*" />
+          <option name="PATTERN" value="Programmers.LineUp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoloPlaying" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.SoloPlaying.SoloPlaying" />
+    <configuration name="SocialDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.SocialDistance.SocialDistance" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.SoloPlaying.*" />
+          <option name="PATTERN" value="Programmers.SocialDistance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LineUp" />
         <item itemvalue="Application.SocialDistance" />
         <item itemvalue="Application.TargetNumber" />
         <item itemvalue="Application.ChooseTangerine" />
         <item itemvalue="Application.StockPrice" />
-        <item itemvalue="Application.SoloPlaying" />
       </list>
     </recent_temporary>
   </component>
