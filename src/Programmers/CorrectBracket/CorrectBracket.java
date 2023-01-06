@@ -8,27 +8,27 @@ public class CorrectBracket {
     public static void main(String[] args) {
         String s = "(()(";
         boolean answer = true;
-        Stack<Character> st = new Stack<>();
+        int cnt = 0;
         char[] stoken = s.toCharArray();
 
         for (char token : stoken) {
 
             if (token == ')') {
-                if (st.isEmpty()) {
+                if (cnt == 0) {
                     answer = false;
                     break;
                 }
-                if (st.peek() == '(') {
-                    st.pop();
+                if (cnt > 0) {
+                    cnt--;
                     continue;
                 }
                 answer = false;
                 break;
             }
-            st.add(token);
+            cnt++;
         }
 
-        if (!st.isEmpty()) answer = false;
+        if (cnt > 0) answer = false;
 
         System.out.println(answer);
     }
