@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/SteppingStones/SteppingStones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/Camoflauge/Camoflauge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/LongJump/LongJump.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,13 +42,13 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/andrewsong/Documents/GitHub/Java-Algorithm-Solving&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.SteppingStones">
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.Fibonacci.Fibonacci" />
+  <component name="RunManager" selected="Application.LongJump">
+    <configuration name="Camouflage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.Camouflage.Camouflage" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.Fibonacci.*" />
+          <option name="PATTERN" value="Programmers.Camouflage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.LargestSquare.LargestSquare" />
+    <configuration name="LongJump" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.LongJump.LongJump" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.LargestSquare.*" />
+          <option name="PATTERN" value="Programmers.LongJump.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongJump" />
+        <item itemvalue="Application.Camouflage" />
         <item itemvalue="Application.SteppingStones" />
         <item itemvalue="Application.FoodFight" />
         <item itemvalue="Application.Trio" />
-        <item itemvalue="Application.Fibonacci" />
-        <item itemvalue="Application.LargestSquare" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +156,11 @@
           <url>file://$PROJECT_DIR$/src/Programmers/SteppingStones/SteppingStones.java</url>
           <line>15</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Programmers/Camoflauge/Camoflauge.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
