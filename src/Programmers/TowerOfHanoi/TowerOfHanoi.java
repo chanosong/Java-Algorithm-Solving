@@ -1,4 +1,4 @@
-package TowerOfHanoi;
+package Programmers.TowerOfHanoi;
 // https://school.programmers.co.kr/learn/courses/30/lessons/12946
 
 import java.util.*;
