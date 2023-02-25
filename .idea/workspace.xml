@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/Spicier/Spicer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/DividePowerGrid/DividePowerGrid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +70,13 @@
       <recent name="Programmers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Spicer">
-    <configuration name="GroupPhoto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.GroupPhoto.GroupPhoto" />
+  <component name="RunManager" selected="Application.DividePowerGrid">
+    <configuration name="DividePowerGrid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.DividePowerGrid.DividePowerGrid" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.GroupPhoto.*" />
+          <option name="PATTERN" value="Programmers.DividePowerGrid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashTableFunc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.HashTableFunc.HashTableFunc" />
+    <configuration name="GroupPhoto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.GroupPhoto.GroupPhoto" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.HashTableFunc.*" />
+          <option name="PATTERN" value="Programmers.GroupPhoto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DividePowerGrid" />
         <item itemvalue="Application.Spicer" />
         <item itemvalue="Application.Lifeboat" />
         <item itemvalue="Application.JumpTeleport" />
         <item itemvalue="Application.GroupPhoto" />
-        <item itemvalue="Application.HashTableFunc" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +159,7 @@
       <workItem from="1676971091685" duration="2654000" />
       <workItem from="1677164286224" duration="22000" />
       <workItem from="1677304102489" duration="2142000" />
+      <workItem from="1677330816927" duration="8061000" />
     </task>
     <servers />
   </component>
