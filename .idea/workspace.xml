@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/DividePowerGrid/DividePowerGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/H_Index/H_Index.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <recent name="Programmers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DividePowerGrid">
+  <component name="RunManager" selected="Application.H_Index">
     <configuration name="DividePowerGrid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programmers.DividePowerGrid.DividePowerGrid" />
       <module name="Java-Algorithm-Solving" />
@@ -84,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupPhoto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.GroupPhoto.GroupPhoto" />
+    <configuration name="H_Index" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.H_Index.H_Index" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.GroupPhoto.*" />
+          <option name="PATTERN" value="Programmers.H_Index.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.H_Index" />
         <item itemvalue="Application.DividePowerGrid" />
         <item itemvalue="Application.Spicer" />
         <item itemvalue="Application.Lifeboat" />
         <item itemvalue="Application.JumpTeleport" />
-        <item itemvalue="Application.GroupPhoto" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +223,11 @@
           <url>file://$PROJECT_DIR$/src/Programmers/Spicier/Spicer.java</url>
           <line>20</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Programmers/H_Index/H_Index.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
