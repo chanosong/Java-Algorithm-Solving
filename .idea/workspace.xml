@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/H_Index/H_Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/CoverUp/CoverUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/Delivery/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/Dotting/Dotting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +72,52 @@
       <recent name="Programmers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.H_Index">
+  <component name="RunManager" selected="Application.CoverUp">
+    <configuration name="CoverUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.CoverUp.CoverUp" />
+      <module name="Java-Algorithm-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.CoverUp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Delivery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.Delivery.Delivery" />
+      <module name="Java-Algorithm-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.Delivery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DividePowerGrid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programmers.DividePowerGrid.DividePowerGrid" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Programmers.DividePowerGrid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dotting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.Dotting.Dotting" />
+      <module name="Java-Algorithm-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.Dotting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,52 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JumpTeleport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.JumpTeleport.JumpTeleport" />
-      <module name="Java-Algorithm-Solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Programmers.JumpTeleport.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Lifeboat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.Lifeboat.Lifeboat" />
-      <module name="Java-Algorithm-Solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Programmers.Lifeboat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Spicer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.Spicier.Spicer" />
-      <module name="Java-Algorithm-Solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Programmers.Spicier.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CoverUp" />
+        <item itemvalue="Application.Delivery" />
+        <item itemvalue="Application.Dotting" />
         <item itemvalue="Application.H_Index" />
         <item itemvalue="Application.DividePowerGrid" />
-        <item itemvalue="Application.Spicer" />
-        <item itemvalue="Application.Lifeboat" />
-        <item itemvalue="Application.JumpTeleport" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +162,11 @@
       <workItem from="1677164286224" duration="22000" />
       <workItem from="1677304102489" duration="2142000" />
       <workItem from="1677330816927" duration="8061000" />
+      <workItem from="1678196626905" duration="1669000" />
+      <workItem from="1678199188138" duration="9897000" />
+      <workItem from="1678443665352" duration="1483000" />
+      <workItem from="1678515434309" duration="5264000" />
+      <workItem from="1678717506667" duration="1166000" />
     </task>
     <servers />
   </component>
@@ -228,6 +235,11 @@
           <url>file://$PROJECT_DIR$/src/Programmers/H_Index/H_Index.java</url>
           <line>18</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Programmers/Dotting/Dotting.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
