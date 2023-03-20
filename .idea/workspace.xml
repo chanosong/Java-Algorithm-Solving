@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Baekjoon/bj10828/bj10828.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/StringBasic/StringBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baekjoon/bj10773/bj10773.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
       <recent name="Programmers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.bj10828">
+  <component name="RunManager" selected="Application.bj10773">
     <configuration name="DivisorSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Programmers.DivisorSum.DivisorSum" />
       <module name="Java-Algorithm-Solving" />
@@ -98,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bj10828" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj10828.bj10828" />
+    <configuration name="bj10773" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj10773.bj10773" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Baekjoon.bj10828.*" />
+          <option name="PATTERN" value="Baekjoon.bj10773.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bj1965" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj1965.bj1965" />
+    <configuration name="bj10828" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj10828.bj10828" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Baekjoon.bj1965.*" />
+          <option name="PATTERN" value="Baekjoon.bj10828.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.bj10773" />
         <item itemvalue="Application.bj10828" />
         <item itemvalue="Application.StringBasic" />
         <item itemvalue="Application.bj2606" />
         <item itemvalue="Application.DivisorSum" />
-        <item itemvalue="Application.bj1965" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +169,7 @@
       <workItem from="1678869074234" duration="2610000" />
       <workItem from="1678971316494" duration="115000" />
       <workItem from="1678978324555" duration="2641000" />
+      <workItem from="1679319895741" duration="334000" />
     </task>
     <servers />
   </component>
