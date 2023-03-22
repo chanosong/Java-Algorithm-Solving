@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Baekjoon/bj10773/bj10773.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baekjoon/bj2891/bj2891.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/LackingAmount/LackingAmount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +71,13 @@
       <recent name="Programmers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.bj10773">
-    <configuration name="DivisorSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.DivisorSum.DivisorSum" />
+  <component name="RunManager" selected="Application.bj2891">
+    <configuration name="LackingAmount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.LackingAmount.LackingAmount" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.DivisorSum.*" />
+          <option name="PATTERN" value="Programmers.LackingAmount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bj2606" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj2606.bj2606" />
+    <configuration name="bj2891" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj2891.bj2891" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Baekjoon.bj2606.*" />
+          <option name="PATTERN" value="Baekjoon.bj2891.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.bj2891" />
+        <item itemvalue="Application.LackingAmount" />
         <item itemvalue="Application.bj10773" />
         <item itemvalue="Application.bj10828" />
         <item itemvalue="Application.StringBasic" />
-        <item itemvalue="Application.bj2606" />
-        <item itemvalue="Application.DivisorSum" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +170,9 @@
       <workItem from="1678869074234" duration="2610000" />
       <workItem from="1678971316494" duration="115000" />
       <workItem from="1678978324555" duration="2641000" />
-      <workItem from="1679319895741" duration="334000" />
+      <workItem from="1679319895741" duration="519000" />
+      <workItem from="1679358732377" duration="182000" />
+      <workItem from="1679491942245" duration="4156000" />
     </task>
     <servers />
   </component>
@@ -248,6 +251,11 @@
           <url>file://$PROJECT_DIR$/src/Programmers/StringBasic/StringBasic.java</url>
           <line>13</line>
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Baekjoon/bj2891/bj2891.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
