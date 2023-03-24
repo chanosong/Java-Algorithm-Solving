@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c4b26d4-f37c-4516-9983-7aa55f8a39b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Baekjoon/bj2891/bj2891.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/LackingAmount/LackingAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baekjoon/bj20044/bj20044.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/Budget/Budget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,13 +71,13 @@
       <recent name="Programmers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.bj2891">
-    <configuration name="LackingAmount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.LackingAmount.LackingAmount" />
+  <component name="RunManager" selected="Application.bj20044">
+    <configuration name="Budget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.Budget.Budget" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.LackingAmount.*" />
+          <option name="PATTERN" value="Programmers.Budget.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.StringBasic.StringBasic" />
+    <configuration name="LackingAmount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.LackingAmount.LackingAmount" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.StringBasic.*" />
+          <option name="PATTERN" value="Programmers.LackingAmount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bj10828" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj10828.bj10828" />
+    <configuration name="bj20044" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.bj20044.bj20044" />
       <module name="Java-Algorithm-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Baekjoon.bj10828.*" />
+          <option name="PATTERN" value="Baekjoon.bj20044.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.bj20044" />
+        <item itemvalue="Application.Budget" />
         <item itemvalue="Application.bj2891" />
         <item itemvalue="Application.LackingAmount" />
         <item itemvalue="Application.bj10773" />
-        <item itemvalue="Application.bj10828" />
-        <item itemvalue="Application.StringBasic" />
       </list>
     </recent_temporary>
   </component>
@@ -256,6 +256,11 @@
           <url>file://$PROJECT_DIR$/src/Baekjoon/bj2891/bj2891.java</url>
           <line>28</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Baekjoon/bj20044/bj20044.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
