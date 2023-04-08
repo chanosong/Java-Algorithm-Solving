@@ -17,6 +17,7 @@ public class bj15686 {
     
     // 조합에 사용될 이미 사용한 것 리스트
     static boolean[] checked;
+    //
     static int[] dx = {0,1,0,-1};
     static int[] dy = {-1,0,1,0};
 
