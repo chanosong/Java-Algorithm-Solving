@@ -1,8 +1,6 @@
 package Baekjoon.bj5397;
 // https://www.acmicpc.net/problem/5397
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class bj5397 {
     public static void main(String[] args) {
@@ -11,31 +9,34 @@ public class bj5397 {
         int n = sc.nextInt();
         sc.nextLine();
 
+        Stack<String> left = new Stack<>();
+        Stack<String> right = new Stack<>();
 
         for (int i = 0; i < n; i++) {
             String[] str = sc.nextLine().split("");
-            List<String> list = new ArrayList<>();
-            int cur = 0;
 
             for (String s: str) {
                 switch (s) {
                     case "<":
-                        if (cur != 0) cur -= 1;
+                        if (left.isEmpty()) break;
+                        right.push(left.pop());
                         break;
                     case ">":
-                        if (cur < list.size()) cur += 1;
+                        if (right.isEmpty()) break;
+                        left.push(right.pop());
                         break;
                     case "-":
-                        if (cur != 0) list.remove(cur - 1);
-                        cur--;
+                        if (left.isEmpty()) break;
+                        left.pop();
                         break;
                     default:
-                        list.add(cur, s);
-                        cur++;
+                        left.push(s);
                 }
             }
             StringBuffer sb = new StringBuffer();
-            for (String s : list) sb.append(s);
+            while (!left.isEmpty()) right.push(left.pop());
+            while (!right.isEmpty()) sb.append(right.pop());
+
             System.out.println(sb);
         }
     }
