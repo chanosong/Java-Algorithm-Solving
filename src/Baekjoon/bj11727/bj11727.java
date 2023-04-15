@@ -7,17 +7,20 @@ public class bj11727 {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int[] dp = new int[n];
+        int[] dp = new int[1000];
 
         // 1 x 2 하나 넣을 경우
         dp[0] = 1;
         // 1 x 2 -> 2개, 2 x 1 -> 2개, 2 x 2 -> 1개
         dp[1] = 3;
 
-        for (int i = 2; i < n; i++) {
-            dp[i] = dp[i - 1] + 2 * dp[i - 2];
+        if (n > 2) {
+
+            for (int i = 2; i < n; i++) {
+                dp[i] = (dp[i - 1] + 2 * dp[i - 2]) % 10007;
+            }
         }
 
-        System.out.println(dp[n - 1] % 10007);
+        System.out.println(dp[n - 1]);
     }
 }
