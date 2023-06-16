@@ -9,75 +9,79 @@ public class bj14575 {
 
     static int n;
     static int t;
-    static int totalMin = 1;
+    static int biggestMin = 1;
+    static int biggestMax = 1;
+    static int[] min;
+    static int[] max;
+    static int answer;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int answer = -1;
+        answer = -1;
 
         n = sc.nextInt();
         t = sc.nextInt();
 
-        PriorityQueue<Person> personList = new PriorityQueue<>();
+        // 최소값들의 합, 최대값들의 합
+        int leftSum = 0;
+        int rightSum = 0;
 
-        // 최소치,최대치 카운터
-        int atLeast = 0;
-        int full = 0;
+        min = new int[n];
+        max = new int[n];
 
         // 사람 주량 정보 입력 받기
         for (int i = 0; i < n; i++) {
             int nowMin = sc.nextInt();
             int nowMax = sc.nextInt();
 
-            atLeast += nowMin;
-            full += nowMax;
-            totalMin = Math.max(totalMin, nowMin);
+            min[i] = nowMin;
+            max[i] = nowMax;
 
-            personList.add(new Person(nowMin, nowMax));
+            leftSum += nowMin;
+            rightSum += nowMax;
+
+            biggestMin = Math.max(biggestMin, nowMin);
+            biggestMax = Math.max(biggestMax, nowMax);
         }
 
-        // 술 최소치를 모두 넘겨줄 수 있는 경우
-        if (atLeast <= t && full >= t) {
-            int remain = t - atLeast;
-            
-            // 리스트가 비거나 다 털때까지 돌린다
-            while (!personList.isEmpty()) {
-
-                int size = personList.size();
-
-                for (int i = 0; i < size; i++) {
-                    Person now = personList.poll();
-
-                    // 최대치가 전체 최소치의 최대 이하인 경우 채우고 바로 버림
-                    if (now.max <= totalMin) {
-                        remain -= now.max - now.min;
-                    }
-                    // 최대치가 전체 최소치의 최대보다 큰 경우 S를 건들지 않는 선까지 땡기고 다시 삽입
-                    else {
-                        remain -= totalMin - now.drunk;
-                        now.drunk = totalMin;
-                        personList.add(now);
-                    }
-
-                    // 음수가 된 경우 강제로 맞춰줌
-                    remain = Math.max(0, remain);
-
-                    // 다 턴 경우 탈출
-                    if (remain == 0) break;
-                }
-
-                // 다 턴 경우 탈출
-                if (remain == 0) break;
-
-                // 그렇지 못한 경우 커트를 한 단계 올린다
-                totalMin++;
-            }
-
-            answer = totalMin;
+        // t를 맞출 수 있는 경우 S를 맞춰가는 과정 진행
+        if (t >= leftSum && t <= rightSum) {
+            binarySearch(biggestMin, biggestMax);
         }
 
-        if (personList.isEmpty()) answer = -1;
         System.out.println(answer);
+    }
+
+    static void binarySearch(int left, int right) {
+        // 못찾은 경우 -1
+        if (left > right) return;
+
+        int mid = (left + right) / 2;
+        int sum = 0;
+        int remain = 0;
+
+        for (int i = 0; i < n; i++) {
+            remain += min[i];
+            sum += Math.min(max[i], mid);
+        }
+
+        remain -= sum;
+
+        // 만약 딱 맞춘 경우 종료
+        if (sum == t) {
+            answer = mid;
+            return;
+        }
+
+        // 모자란 경우 더 커야한다
+        if (sum < t) {
+            binarySearch(mid + 1, right);
+            return;
+        }
+
+        // 과한 경우 더 작아야한다 혹은 좀 덜어낸 경우에는 범위 안에 들어온 경우 가능할 수도 있으니 answer 갱신
+        if (sum + remain <= t && sum >= t) answer = mid;
+        binarySearch(left, mid - 1);
     }
 }
 
