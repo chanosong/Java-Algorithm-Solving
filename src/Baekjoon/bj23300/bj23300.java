@@ -24,6 +24,7 @@ public class bj23300 {
         Deque<Integer> forward = new ArrayDeque<>();
 
         int nowPage = 0;
+        boolean isFirst = true;
 
         for (int i = 0; i < q; i++) {
             String[] line = br.readLine().split(" ");
@@ -43,20 +44,29 @@ public class bj23300 {
                     break;
                 case "A":
                     forward.clear();
-                    if (nowPage != 0) {
+                    if (!isFirst) {
                         backward.push(nowPage);
                     }
+                    else {
+                        isFirst = false;
+                    }
+
                     nowPage = Integer.parseInt(line[1]);
                     break;
                 case "C":
                     Deque<Integer> cache = new ArrayDeque<>();
-                    int last = 0;
+
                     while (!backward.isEmpty()) {
-                        int now = backward.poll();
+                        int now = backward.pollLast();
+
                         // 겹치는 경우 스킵
-                        if (now == last) continue;
-                        cache.push(now);
-                        last = now;
+                        if (cache.isEmpty()) {
+                            cache.addFirst(now);
+                            continue;
+                        }
+
+                        if (now == cache.getFirst()) continue;
+                        cache.addFirst(now);
                     }
                     // 스위치
                     backward = cache;
