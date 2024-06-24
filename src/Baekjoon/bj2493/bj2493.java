@@ -16,31 +16,37 @@ public class bj2493 {
 
         int[] answer = new int[n];
 
-        int maxHeight = height[0];
-        int minHeight = 0;
-        int maxIdx = 0;
-        int minIdx = 0;
+        Stack<Tower> st = new Stack<>();
+
+        st.push(new Tower(height[0], 0));
 
         for (int i = 1; i < n; i++) {
-            if (height[i] >= maxHeight) {
-                maxHeight = height[i];
-                maxIdx = i;
+            // stack이 빈 경우 삽입
+            while (!st.isEmpty()) {
+                if (st.peek().height > height[i]) {
+                    answer[i] = st.peek().index + 1;
+                    break;
+                }
+                st.pop();
             }
-            else if (height[i] <= minHeight) {
-                minHeight = height[i];
-                answer[i] = minIdx + 1;
-                minIdx = i;
-            }
-            else {
-                minHeight = height[i];
-                answer[i] = maxIdx + 1;
-                minIdx = i;
-            }
+
+            st.push(new Tower(height[i], i));
         }
+
 
         for (int h : answer) {
             System.out.print(h + " ");
         }
         System.out.println();
+    }
+}
+
+class Tower {
+    int height;
+    int index;
+
+    Tower (int height, int index) {
+        this.height = height;
+        this.index = index;
     }
 }

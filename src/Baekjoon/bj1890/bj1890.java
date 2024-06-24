@@ -10,7 +10,7 @@ public class bj1890 {
 
     static int n;
     static int[][] map;
-    static int[][] score;
+    static long[][] score;
     static int[] dr = {1,0};
     static int[] dc = {0,1};
     static int answer = 0;
@@ -20,7 +20,7 @@ public class bj1890 {
         n = Integer.parseInt(br.readLine());
 
         map = new int[n][n];
-        score = new int[n][n];
+        score = new long[n][n];
 
         for (int i = 0; i < n; i++) {
             map[i] = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -30,6 +30,10 @@ public class bj1890 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
+
+                // 이동 가능 거리가 없거나 도달 불가능한 영역인 경우
+                if (score[i][j] == 0 || map[i][j] == 0) continue;
+                
                 if (j + map[i][j] < n)
                     score[i][j + map[i][j]] += score[i][j];
 
@@ -37,8 +41,8 @@ public class bj1890 {
                     score[i + map[i][j]][j] += score[i][j];
             }
 
-            printMap();
-            System.out.println();
+            //printMap();
+            //System.out.println();
         }
 
         System.out.println(score[n-1][n-1]);

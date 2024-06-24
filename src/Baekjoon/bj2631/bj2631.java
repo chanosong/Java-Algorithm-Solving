@@ -10,6 +10,7 @@ public class bj2631 {
 
     static int n;
     static int[] arr;
+    static int[] dp;
 
     static int answer;
 
@@ -26,21 +27,19 @@ public class bj2631 {
             arr[i] = Integer.parseInt(br.readLine());
         }
 
-        recursive(0, 0, 0);
+        dp = new int[n];
 
-        System.out.println(answer);
-    }
+        Arrays.fill(dp, 1);
 
-    static void recursive(int idx, int max, int cnt) {
-        if (idx == n) {
-            answer = Math.min(answer, n - cnt);
-            return;
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] < arr[i]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                }
+            }
         }
 
-        if (arr[idx] > max) {
-            recursive(idx + 1, arr[idx], cnt + 1);
-        }
-        recursive(idx + 1, max, cnt);
-
+        System.out.println(n - Arrays.stream(dp).max().getAsInt());
     }
+
 }
