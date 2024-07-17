@@ -35,47 +35,22 @@ public class bj13702 {
             sum += arr[i];
         }
 
-        long max = sum / k;
+        long mid = sum / k;
+        long left = 0;
+        long right = Arrays.stream(arr).max().getAsLong();
 
-        while (true) {
-
-            if (max == 0) break;
-
+        while (left < mid) {
+            int tmp = 0;
             for (int i = 0; i < n; i++) {
-                cnt[i] = arr[i] / max;
+                tmp += arr[i] / mid;
             }
 
-            long[] tmp = new long[n];
+            if (tmp < k) right = mid;
+            else left = mid;
 
-            for (int i = 0; i < n; i++) {
-                // 시작부터 안되는 경우 스킵
-                if (cnt[i] == 0) continue;
-                
-                tmp[i] = arr[i] / (cnt[i] + 1);
-            }
-
-            int nowCnt = 0;
-            int minIdx = 0;
-            long tmpMax = 0;
-
-            for (int i = 0; i < n; i++) {
-
-                if (cnt[i] == 0) continue;
-
-                nowCnt += cnt[i];
-
-                if (tmpMax < tmp[i]) {
-                    tmpMax = tmp[i];
-                    minIdx = i;
-                }
-            }
-
-            if (k == nowCnt) break;
-
-            max = tmpMax;
-            cnt[minIdx]++;
+            mid = (right + left) / 2;
         }
 
-        System.out.println(max);
+        System.out.println(mid);
     }
 }
