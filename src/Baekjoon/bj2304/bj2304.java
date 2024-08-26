@@ -25,50 +25,26 @@ public class bj2304 {
 
         Arrays.sort(pillar);
 
-        Stack<Pillar> stack = new Stack<>();
-
         int answer = 0;
-        int maxH = 0;
+        Pillar max = new Pillar(0, 0);
 
         for (int i = 0; i < n; i++) {
-            // 스택이 빈경우 밀어넣기
-            if(stack.isEmpty()) {
-                stack.push(pillar[i]);
-                maxH = pillar[i].h;
-                continue;
-            }
-
-            // 여태까지 중 가장 큰 기둥인 경우
-            if (maxH <= pillar[i].h) {
-                Pillar now;
-                while (true) {
-                    now = stack.pop();
-
-                    if (now.h == maxH) {
-                        answer += (pillar[i].p - now.p) * now.h;
-                        break;
-                    }
-                }
-            }
-
-            stack.push(pillar[i]);
-            maxH = Math.max(maxH, pillar[i].h);
-        }
-
-        // 끝처리
-        Pillar last = stack.pop();
-        maxH = last.h;
-
-        while (!stack.isEmpty()) {
-            Pillar now = stack.pop();
-
-            if (maxH < now.h) {
-                answer += (last.p - now.p) * last.h;
-                last = now;
+            if (pillar[i].h >= max.h) {
+                answer += max.h * (pillar[i].p - max.p);
+                max = pillar[i];
             }
         }
 
-        answer += last.h;
+        Pillar min = pillar[n - 1];
+
+        for (int i = n - 1; i >= 0; i--) {
+            if (pillar[i].h > min.h) {
+                answer += min.h * (min.p - pillar[i].p);
+                min = pillar[i];
+            }
+        }
+
+        answer += max.h;
 
         System.out.println(answer);
     }
