@@ -3,6 +3,9 @@ package Baekjoon.bj30621;
 import java.io.*;
 import java.util.*;
 
+// https://www.acmicpc.net/problem/30621
+// 30621 어? 금지
+
 public class bj30621 {
 
     static int[] t;
@@ -27,7 +30,7 @@ public class bj30621 {
 
             int past_t = temp_t - temp_b;
 
-            // past_t 보다 작은 가장 가까운 수 찾기
+            // past_t 보다 작은 가장 큰 수 찾기
             int past_idx = binarySearch(i - 1, past_t);
 
             if (past_idx >= 0) dp[i] = Math.max(dp[i - 1], dp[past_idx] + temp_c);
@@ -37,20 +40,25 @@ public class bj30621 {
         System.out.println(dp[n]);
     }
 
-    static int binarySearch(int idx, int past_t) {
+    static int binarySearch(int end, int past_t) {
 
         int start = 0;
-        int end = idx;
         int mid = 0;
+        int index = -1;
 
         while (start <= end) {
             mid = (start + end) / 2;
 
-            if (past_t == t[mid]) return mid;
-            else if (past_t < t[mid]) end = mid - 1;
-            else start = mid + 1;
+            // 현재 수가 기준보다 작은 경우, 더 큰 수 찾아야함
+            if (t[mid] <= past_t) {
+                start = mid + 1;
+                index = mid;
+            }
+            else {
+                end = mid - 1;
+            }
         }
 
-        return mid;
+        return index;
     }
 }
