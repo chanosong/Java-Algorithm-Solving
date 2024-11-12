@@ -9,7 +9,8 @@ import java.util.*;
 public class bj12978 {
 
     static int n;
-    static int[] arr;
+    static int[] dp1;
+    static int[] dp2;
     static Map<Integer, List<Integer>> map;
     static boolean[] isVisited;
 
@@ -20,7 +21,8 @@ public class bj12978 {
 
         map = new HashMap<>();
 
-        arr = new int[2];
+        dp1 = new int[n + 1];
+        dp2 = new int[n + 1];
 
         isVisited = new boolean[n + 1];
 
@@ -43,22 +45,24 @@ public class bj12978 {
             map.get(b).add(a);
         }
 
-        traverse(1, true);
+        traverse(1);
 
-        System.out.println(Math.min(arr[0], arr[1]));
+        int answer = Math.min(dp1[1], dp2[1]);
+
+        System.out.println(answer);
     }
 
-    static public void traverse (int i, boolean flag) {
-        if (flag) arr[0]++;
-        else arr[1]++;
-
+    static public void traverse (int i) {
         isVisited[i] = true;
+        dp1[i] = 1;
 
-        List<Integer> list = map.get(i);
+        for (int idx : map.get(i)) {
+            if (isVisited[idx]) continue;
 
-        for (int j = 0; j < list.size(); j++) {
-            if (isVisited[list.get(j)]) continue;
-            traverse(list.get(j), !flag);
+            traverse(idx);
+
+            dp1[i] += Math.min(dp1[idx], dp2[idx]);
+            dp2[i] += dp1[idx];
         }
     }
 }
