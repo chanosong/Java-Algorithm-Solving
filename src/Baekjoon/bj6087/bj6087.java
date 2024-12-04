@@ -100,15 +100,19 @@ public class bj6087 {
             if (nw < 0 || nw >= w || nh < 0 || nh >= h) break;
             // 벽을 만난 경우
             if (map[nw][nh].equals("*")) break;
+
+            boolean keepGoing = false;
             // 기존 방식이 더 적은 거울을 사용하는 경우
-            if (mirrorCnt[nw][nh] <= nCnt) break;
+            if (mirrorCnt[nw][nh] < nCnt) break;
+            else if (mirrorCnt[nw][nh] > nCnt) keepGoing = true;
+
 
             mirrorCnt[nw][nh] = nCnt;
 
             // 목적지인 경우 해당 시퀀스 스킵
             if (map[nw][nh].equals("C")) break;
 
-            q.add(new Procedure(nw, nh, nCnt, direction));
+            if (keepGoing) q.add(new Procedure(nw, nh, nCnt, direction));
 
             coefficient++;
         }
